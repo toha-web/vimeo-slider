@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.swiper-pagination-bullet{
+    background: white;
+    width: 12px;
+    height: 12px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    position: absolute;
+    width: 80vh;
+    height: 80vh;
+    z-index: 3;
+    border: 1px solid white;
+    background-color: #000000;
+}
+
+.close-btn {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 4;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+}
+.modal .swiper-wrapper {
+    display: flex;
+}
+.modal .swiper-slide {
+    align-self: center;
+}
